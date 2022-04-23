@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="portfolio">
+        <meta name="author" content="Krzysztof Hodun">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="{{url_for('static', filename='favicon.jpg')}}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/mxt0jbh.css">
+        <link type="text/css" href="{{url_for('static', filename='style.css')}}" rel="stylesheet" >
+        <link rel="stylesheet" href="dist/css/glightbox.css"/>
+        <script src="dist/js/glightbox.min.js"></script>   
+        <title>
+            Gallery
+        </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">791114</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('aboutme') }}">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('contact') }}">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('gallery') }}">Gallery</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="container" style="padding-top: 2%;">
+            <h1 style="text-align: center;">Gallery</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="https://i.pinimg.com/564x/1e/4d/12/1e4d1230c42ca86a9685b2c2d199f419.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/1e/4d/12/1e4d1230c42ca86a9685b2c2d199f419.jpg"  class="img-fluid"  style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="https://i.pinimg.com/564x/1f/08/d9/1f08d9ded75d9b76e2586b956eb0b91c.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/1f/08/d9/1f08d9ded75d9b76e2586b956eb0b91c.jpg"  class="img-fluid" style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="https://i.pinimg.com/564x/66/f5/5c/66f55cd838a73bda48370cc46a0646b3.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/66/f5/5c/66f55cd838a73bda48370cc46a0646b3.jpg"  class="img-fluid" style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="https://i.pinimg.com/564x/d1/82/54/d1825417ec7ac418c57bc26810174500.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/d1/82/54/d1825417ec7ac418c57bc26810174500.jpg"  class="img-fluid" style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="https://i.pinimg.com/564x/57/8d/d8/578dd8c895fa1b97b372bb0b4f7592a1.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/57/8d/d8/578dd8c895fa1b97b372bb0b4f7592a1.jpg"  class="img-fluid" style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="https://i.pinimg.com/564x/6a/e4/b4/6ae4b43c847fc53f20c6cb7835843904.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/6a/e4/b4/6ae4b43c847fc53f20c6cb7835843904.jpg"  class="img-fluid" style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="https://i.pinimg.com/564x/ae/17/9f/ae179f7506f0d3aefeec671c1da3216f.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/ae/17/9f/ae179f7506f0d3aefeec671c1da3216f.jpg"  class="img-fluid" style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="https://i.pinimg.com/564x/86/0e/62/860e62e6989fcb49d9de89e178146e1f.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/86/0e/62/860e62e6989fcb49d9de89e178146e1f.jpg"  class="img-fluid" style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm" >
+                        <a href="https://i.pinimg.com/564x/00/35/9e/00359e6816cfbd25e79ebac3ab2b8a70.jpg" data-lightbox="photos">
+                            <img src="https://i.pinimg.com/564x/00/35/9e/00359e6816cfbd25e79ebac3ab2b8a70.jpg"  class="img-fluid" style="height: 225px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+            </div>
+          </div>
+    </body>
+</html>
